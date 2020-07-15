@@ -2,7 +2,7 @@
 
 Simple budgetApp / Vanilla Js / RWD
 
-![](budapp1.png)
-![](budapp2.png)
-![](budapp3.png)
-![](budapp4.png)
+![](img/budapp1.png)
+![](img/budapp2.png)
+![](img/budapp3.png)
+![](img/budapp4.png)
