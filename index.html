@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3da1a747b2.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget App</title>
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header__heading">Budget App</h1>
+    </header>
+    <main class="budget">
+        <section class="budget_form">
+            <p class="error hide" data-error>
+                Description can't be empty, value must be positive value
+            </p>
+            <ul class="inputs">
+                <li class="switch">
+                    <input type="checkbox" name="switch" id="switch" class="switch_input" checked>
+                    <label class="switch_label" for="switch"></label>
+                </li>
+                <li class="input">
+                    <input type="text" name="description" id="description" class="input_input" placeholder="description">
+                    <label for="description" class="input_label">Description</label>
+                </li>
+                <li class="input">
+                    <input type="number" name="value" id="value" class="input_input" placeholder="value" min="0">
+                    <label for="value" class="input_label">Value</label>
+                </li>
+                <li class="inputs_button">
+                    <button class="button" data-enter-button><i class="fa fa-check-circle fa-3x button_icon" aria-hidden="true"></i></button>
+                </li>
+            </ul>
+        </section>
+        <section class="budget_balance">
+            <h2 class="balance_heading" data-total-budget>
+                Your budget is 100 PLN
+            </h2>
+            <article class="balance_list" data-balance-list>
+                <section class="list" >
+                    <h3 class="list_heading list_heading--incomes">Incomes</h3>
+                    <ul class="list_list" data-balance-list-incomes>
+                        
+                    </ul>
+                </section>
+                <section class="list" >
+                    <h3 class="list_heading list_heading--expenses">Expenses</h3>
+                    <ul class="list_list" data-balance-list-expenses>
+                        
+                    </ul>
+                </section>
+            </article>
+        </section>
+    </main>
+
+
+    <script src="app.js"></script>
+    <script>
+        const budgetapp = new BudgetApp();
+        budgetapp.initApp();
+    </script>
+</body>
+</html>
