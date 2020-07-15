@@ -201,6 +201,7 @@ body{
 .item_button{
    height: 3rem;
    width: 3rem;
+   border: 1px solid #000;
   
 }
 .error{

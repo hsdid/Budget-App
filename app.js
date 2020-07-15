@@ -153,8 +153,8 @@ class BudgetApp {
                 <p class="item_description" data-item-description>${description}</p>
                 <p class="item_value ${isPositive ? 'item_value--income' : 'item_value--expnses'}" data-item-value>${this.formatPrice(parseFloat(price,10),isPositive)}</p>     
                 <div class="item__buttons">
-                    <button class="item_button item_button--edit" data-edit-btn>edit</button>
-                    <button class="item_button item_button--delete" data-delete-btn>del</button>
+                    <button class="item_button item_button--edit button" data-edit-btn>edit</button>
+                    <button class="item_button item_button--delete button" data-delete-btn>del</button>
                 </div>             
             </li>
         `;
